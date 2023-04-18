@@ -25,7 +25,7 @@ export default function UserCard({
 
 			<h1 className="text-1xl font-medium">{`${first_name} ${last_name}`}</h1>
 
-			<span className="inline-block text-sm text-gray-300">{email}</span>
+			<span className="inline-block text-sm">{email}</span>
 		</article>
 	);
 }

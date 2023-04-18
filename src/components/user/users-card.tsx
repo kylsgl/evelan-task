@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import { type User } from '@/services/api/getUsers';
 
-interface UserProps extends User {}
+interface UsersCardProps extends User {}
 
-export default function UserCard({
+export default function UsersCard({
 	id,
 	email,
 	first_name,
 	last_name,
 	avatar,
-}: UserProps): JSX.Element {
+}: UsersCardProps): JSX.Element {
 	return (
 		<article className="bg-teal-700 border border-gray-500 flex flex-col gap-1.5 items-center justify-center p-6 w-[14rem] rounded-lg shadow-xl text-white">
 			<Image

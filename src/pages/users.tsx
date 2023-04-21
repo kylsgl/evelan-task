@@ -1,23 +1,23 @@
 import { type GetServerSidePropsResult } from 'next';
 import { getUsers, type UserData } from '@/services/api/getUsers';
-import Users from '@/components/user/users';
+import UserList from '@/components/user-list/user-list';
 
 interface ServerProps {
-	data: UserData;
+	userData: UserData;
 }
 
-export default function UsersPage({ data }: ServerProps): JSX.Element {
-	return <Users {...data} />;
+export default function UsersPage({ userData }: ServerProps): JSX.Element {
+	return <UserList {...userData} />;
 }
 
 export async function getServerSideProps(): Promise<
 	GetServerSidePropsResult<ServerProps>
 > {
-	const data = await getUsers();
+	const userData = await getUsers();
 
 	return {
 		props: {
-			data,
+			userData,
 		},
 	};
 }

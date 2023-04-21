@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function HomePage(): JSX.Element {
 	return (
 		<main className="flex items-center justify-center h-screen w-screen">
-			<Link className="" href="/users">
+			<Link href="/users">
 				<Button>View Users</Button>
 			</Link>
 		</main>

@@ -8,8 +8,8 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
 	return (
 		<Fragment>
 			<Head>
-				<title>Evelan Test Task</title>
-				<meta name="description" content="Next.js test task for Evelan" />
+				<title>Evelan Task</title>
+				<meta name="description" content="Next.js task for Evelan" />
 			</Head>
 			<Component {...pageProps} />
 		</Fragment>
